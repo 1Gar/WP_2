@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_2</title>
+  
+
+<script defer src="bungle.js"></script></head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="tabs">
+            <div class="tabs__nav tabs-nav">
+                <div class="tabs-nav__item is-active" data-tab-name="tab-1">Калькулятор дат</div>
+                <div class="tabs-nav__item" data-tab-name="tab-2">Таймер</div>
+
+            </div>
+            <div class="tabs__content">
+                <div class="tab is-active tab-1">
+                    <form id="calcDate">
+                        <label for="dateFrom">
+                            Первая дата:
+                            <input type="date" name="dateFrom" id="dateFrom">
+                        </label>
+                        <label for="dateTo">
+                            Вторая дата:
+                            <input type="date" name="dateTo" id="dateTo">
+                        </label>
+                        <button type="submit">Рассчитать промежуток</button>
+                    </form>
+                    <p id="output">
+                    </p>
+                </div>
+
+
+
+
+
+
+
+                <div class="tab tab-2">
+
+                    <div id="container">
+                        <div class="text">
+                            <p id="hour-label" class="label">Часы</p>
+                            <p id="min-label" class="label">Минуты</p>
+                            <p id="sec-label" class="label">Секунды</p>
+                        </div>
+
+
+
+                        <div class="inp">
+                            <input id="hour" type="number" max="99" min="0" value="0" class="time">
+                            <input id="minute" type="number" max="60" min="0" value="0" class="time">
+                            <input id="sec" type="number" max="60" min="0" value="0" class="time">
+
+                        </div>
+
+                        <div class="btn">
+                            <button id="start" class="btn">Start</button>
+                            <button id="reset" class="btn">Reset</button>
+                            <button id="pause" class="btn">Stop</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+
+
+
+</body>
+
+
+
+
+</html>
